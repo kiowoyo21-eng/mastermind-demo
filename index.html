@@ -3,21 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#050505" />
-  <meta name="description" content="Mastermind Autoworks — premium automotive diagnostics, maintenance, and repair in Mandaluyong." />
-  <title>Mastermind Autoworks — Precision Beyond Repair</title>
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Mastermind Autoworks in Mandaluyong provides precision vehicle diagnostics, preventive maintenance, engine and drivetrain work, suspension and steering service, electrical repair, and more." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mastermind Autoworks | Car Repair & Diagnostics in Mandaluyong" />
+  <meta property="og:description" content="Precision diagnostics, considered recommendations, and premium automotive care in Mandaluyong." />
+  <meta property="og:url" content="https://mastermind-demo.vercel.app/" />
+  <meta property="og:image" content="https://mastermind-demo.vercel.app/assets/og-mastermind.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://mastermind-demo.vercel.app/" />
+  <title>Mastermind Autoworks | Car Repair & Diagnostics in Mandaluyong</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Mastermind Autoworks",
+    "url": "https://mastermind-demo.vercel.app/",
+    "telephone": "+639176290000",
+    "image": "https://mastermind-demo.vercel.app/assets/og-mastermind.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "858 Balagtas St., Addition Hills",
+      "addressLocality": "Mandaluyong City",
+      "postalCode": "1550",
+      "addressRegion": "Metro Manila",
+      "addressCountry": "PH"
+    },
+    "areaServed": "Metro Manila",
+    "priceRange": "₱₱₱",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Automotive Services",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vehicle Diagnostics"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Preventive Maintenance"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Engine and Drivetrain Service"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Suspension and Steering Service"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Electrical and Electronics Service"}}
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="site-shell">
     <header class="site-header" id="top">
       <div class="header-inner wrap">
         <a href="#home" class="brand brand-image" aria-label="Mastermind Autoworks home">
-          <img src="assets/mastermind-logo.png" alt="Mastermind Autoworks" />
+          <img src="assets/mastermind-logo-light.png" alt="Mastermind Autoworks" />
         </a>
 
         <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
@@ -27,44 +67,51 @@
         <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
           <a class="nav-link active" href="#home">Home</a>
           <a class="nav-link" href="#services">Services</a>
-          <a class="nav-link" href="#diagnostics">Diagnostics</a>
-          <a class="nav-link" href="#work">Real Work</a>
+          <a class="nav-link" href="#diagnostics">Process</a>
+          <a class="nav-link" href="#reviews">Reviews</a>
           <a class="nav-link" href="#standard">Our Standard</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
 
-        <a class="button button-orange header-cta" href="#contact">Book a Visit <span>→</span></a>
+        <a class="button button-primary header-cta" href="book/">Request a Visit <span aria-hidden="true">→</span></a>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero section-frame wrap" id="home">
         <div class="hero-copy">
-          <p class="eyebrow">01 — Premium automotive care, considered end to end.</p>
+          <p class="eyebrow">01 — Premium automotive care in Mandaluyong</p>
           <h1>Precision<br>Beyond <span>Repair.</span></h1>
-          <p class="hero-lead">Advanced diagnostics. Proven workmanship.<br>A premium standard of car care.</p>
-          <p class="hero-body">Mastermind Autoworks brings together modern diagnostics, experienced technicians, and a deliberate service process so every recommendation has a reason behind it.</p>
+          <p class="hero-lead">Advanced diagnostics. Proven process.<br>A more considered way to care for your car.</p>
+          <p class="hero-body">Mastermind Autoworks combines modern diagnostics, experienced technicians, and a deliberate service process so every recommendation starts with a reason.</p>
           <div class="hero-actions">
-            <a class="button button-orange" href="#contact">Book a Visit <span>→</span></a>
-            <a class="button button-ghost" href="#services">Explore Services <span>→</span></a>
+            <a class="button button-primary" href="book/">Request a Visit <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#services">Explore Services <span aria-hidden="true">→</span></a>
           </div>
 
-          <div class="hero-pillars" aria-label="Mastermind Autoworks service values">
-            <div><span>01</span><strong>Services</strong><small>Complete vehicle care</small></div>
-            <div><span>02</span><strong>Excellence</strong><small>Detail-led workmanship</small></div>
-            <div><span>03</span><strong>Premium</strong><small>A higher ownership experience</small></div>
+          <div class="quick-facts" aria-label="Mastermind Autoworks practical information">
+            <a href="https://www.google.com/maps/search/?api=1&query=Mastermind%20Autoworks&query_place_id=ChIJQ88W1lfJlzMRC0NJgx6OOV0" target="_blank" rel="noopener noreferrer">
+              <span>Location</span><strong>Mandaluyong</strong><small>858 Balagtas St., Addition Hills</small>
+            </a>
+            <a href="tel:+639176290000">
+              <span>Call</span><strong>+63 917 629 0000</strong><small>Talk to the service team</small>
+            </a>
+            <a href="#reviews">
+              <span>Google</span><strong>4.1 / 5</strong><small>31 public reviews</small>
+            </a>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=88" alt="Premium vehicle in a dark automotive setting" />
-          <div class="visual-motto">BETTER CARS<br>BRIGHTER DRIVERS</div>
-          <div class="visual-meta">
-            <span>MANDALUYONG, PH</span>
-            <span>PREMIUM CAR CARE</span>
-            <span>EST. WITH PURPOSE</span>
+        <div class="hero-visual" aria-label="Mastermind diagnostic-first service philosophy">
+          <div class="technical-grid" aria-hidden="true"></div>
+          <div class="hero-mark">MND</div>
+          <div class="hero-scan-card">
+            <span class="micro">VEHICLE HEALTH / 001</span>
+            <div class="scan-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <strong>Inspect.<br>Diagnose.<br>Explain.<br>Recommend.</strong>
+            <small>Clear findings before the next decision.</small>
           </div>
-          <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+          <div class="hero-meta"><span>MANDALUYONG, PH</span><span>DIAGNOSTIC-FIRST CARE</span></div>
         </div>
       </section>
 
@@ -74,200 +121,153 @@
           <h2>Built around the standard<br><span>your car deserves.</span></h2>
         </div>
         <div class="standard-copy">
-          <p>Good service is more than completing a repair. It is the confidence that the vehicle was assessed properly, the work was performed carefully, and every recommendation was made with purpose.</p>
-          <a href="#diagnostics" class="text-link">See how we work <span>→</span></a>
+          <p>Good service is more than completing a repair. It is knowing what was checked, understanding what was found, and deciding what to do next with clear information.</p>
+          <a href="#diagnostics" class="text-link">See the process <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="standard-grid">
           <article class="standard-card featured">
             <span class="standard-no">01</span>
-            <div>
-              <p class="micro">SERVICE</p>
-              <h3>Complete care without the guesswork.</h3>
-              <p>Diagnostics, preventive maintenance, mechanical work, electrical systems, suspension, steering, and air-conditioning—handled through one considered service experience.</p>
-            </div>
+            <div><p class="micro">DIAGNOSIS</p><h3>Understand the cause before choosing the repair.</h3><p>Inspection, scan data, testing, and technician judgement come before the recommendation.</p></div>
           </article>
           <article class="standard-card">
             <span class="standard-no">02</span>
-            <div>
-              <p class="micro">EXCELLENCE</p>
-              <h3>Details matter.</h3>
-              <p>Methodical inspection, disciplined workmanship, and careful verification before the vehicle goes back on the road.</p>
-            </div>
+            <div><p class="micro">CLARITY</p><h3>Know what was found.</h3><p>We structure the conversation around the problem, the evidence, and the next practical step.</p></div>
           </article>
           <article class="standard-card">
             <span class="standard-no">03</span>
-            <div>
-              <p class="micro">PREMIUM</p>
-              <h3>Quality you can feel.</h3>
-              <p>A clean environment, clear communication, thoughtful recommendations, and an experience built around confidence.</p>
-            </div>
+            <div><p class="micro">WORKMANSHIP</p><h3>Finish with verification.</h3><p>Repair is followed by checks appropriate to the work performed before the vehicle is released.</p></div>
           </article>
         </div>
       </section>
 
       <section class="services section-frame wrap" id="services">
         <div class="section-head services-head">
-          <div>
-            <p class="eyebrow">03 — Our services</p>
-            <h2>Complete care.<br><span>One premium standard.</span></h2>
-          </div>
-          <p>From the first scan to the final road check, every service is approached with the same objective: diagnose accurately, work carefully, and return the vehicle better than it arrived.</p>
-          <div class="section-note">ALL MAKES.<br>ALL MODELS.<br>ONE STANDARD.</div>
+          <div><p class="eyebrow">03 — Our services</p><h2>Start with the problem.<br><span>Choose the right path.</span></h2></div>
+          <p>Each service now has its own page with symptoms, what we inspect, what the process looks like, and how to request a visit.</p>
+          <div class="section-note">DIAGNOSE.<br>SERVICE.<br>VERIFY.</div>
         </div>
 
         <div class="services-grid">
-          <article class="service-card service-featured">
-            <div class="service-image"><img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1200&q=82" alt="Automotive diagnostics" loading="lazy"></div>
-            <div class="service-content"><p class="micro">01 — DIAGNOSTICS</p><h3>Know the cause before the repair.</h3><p>Structured fault finding, scan data, inspection, and testing for modern vehicles.</p><span class="service-arrow">→</span></div>
-          </article>
-          <article class="service-card">
-            <div class="service-image oil"></div>
-            <div class="service-content"><p class="micro">02 — MAINTENANCE</p><h3>Preventive Maintenance</h3><p>Maintain performance, reduce avoidable wear, and plan ahead with confidence.</p><span class="service-arrow">→</span></div>
-          </article>
-          <article class="service-card">
-            <div class="service-image"><img src="https://images.unsplash.com/photo-1613214150384-2a4ea011e7f4?auto=format&fit=crop&w=900&q=80" alt="Engine service" loading="lazy"></div>
-            <div class="service-content"><p class="micro">03 — POWERTRAIN</p><h3>Engine & Drivetrain</h3><p>Focused care for engines, transmissions, and drivetrain systems.</p><span class="service-arrow">→</span></div>
-          </article>
-          <article class="service-card">
-            <div class="service-image suspension"></div>
-            <div class="service-content"><p class="micro">04 — CHASSIS</p><h3>Suspension & Steering</h3><p>Restore stability, ride quality, handling, and driver confidence.</p><span class="service-arrow">→</span></div>
-          </article>
-          <article class="service-card">
-            <div class="service-image electric"></div>
-            <div class="service-content"><p class="micro">05 — ELECTRICAL</p><h3>Electrical & Electronics</h3><p>From charging systems to complex electronic faults and components.</p><span class="service-arrow">→</span></div>
-          </article>
-          <article class="service-card">
-            <div class="service-image ac"></div>
-            <div class="service-content"><p class="micro">06 — COMFORT</p><h3>Air-conditioning</h3><p>Diagnosis, service, and repair for consistent cabin comfort.</p><span class="service-arrow">→</span></div>
-          </article>
+          <a class="service-card service-featured" href="services/diagnostics/">
+            <div class="service-visual visual-diagnostics" aria-hidden="true"><span>SCAN</span><b>01</b></div>
+            <div class="service-content"><p class="micro">01 — DIAGNOSTICS</p><h3>Know the cause before the repair.</h3><p>Structured fault finding, scan data, inspection, and testing for modern vehicles.</p><span class="service-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="service-card" href="services/preventive-maintenance/">
+            <div class="service-visual visual-maintenance" aria-hidden="true"><span>PMS</span><b>02</b></div>
+            <div class="service-content"><p class="micro">02 — MAINTENANCE</p><h3>Preventive Maintenance</h3><p>Maintain performance, reduce avoidable wear, and plan upcoming work with confidence.</p><span class="service-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="service-card" href="services/engine-drivetrain/">
+            <div class="service-visual visual-engine" aria-hidden="true"><span>ENG</span><b>03</b></div>
+            <div class="service-content"><p class="micro">03 — POWERTRAIN</p><h3>Engine & Drivetrain</h3><p>Focused diagnosis and service for engine, transmission, and drivetrain concerns.</p><span class="service-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="service-card" href="services/suspension-steering/">
+            <div class="service-visual visual-chassis" aria-hidden="true"><span>CHS</span><b>04</b></div>
+            <div class="service-content"><p class="micro">04 — CHASSIS</p><h3>Suspension & Steering</h3><p>Inspect ride, stability, noise, steering response, and worn chassis components.</p><span class="service-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="service-card" href="services/electrical-electronics/">
+            <div class="service-visual visual-electrical" aria-hidden="true"><span>12.7V</span><b>05</b></div>
+            <div class="service-content"><p class="micro">05 — ELECTRICAL</p><h3>Electrical & Electronics</h3><p>Charging, starting, wiring, modules, sensors, and electronic fault diagnosis.</p><span class="service-arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="service-card" href="services/air-conditioning/">
+            <div class="service-visual visual-climate" aria-hidden="true"><span>A/C</span><b>06</b></div>
+            <div class="service-content"><p class="micro">06 — COMFORT</p><h3>Air-conditioning</h3><p>System checks and service guidance for cooling performance and cabin comfort.</p><span class="service-arrow" aria-hidden="true">→</span></div>
+          </a>
         </div>
+        <p class="service-availability-note">Service availability and scope may vary by vehicle and current shop capability. Confirm the required work when requesting a visit.</p>
       </section>
 
       <section class="process section-frame wrap" id="diagnostics">
         <div class="section-head">
-          <div>
-            <p class="eyebrow">04 — Precision diagnostics</p>
-            <h2>Correct diagnosis.<br><span>Clear next step.</span></h2>
-          </div>
-          <p>We do not start with the repair. We start by understanding the vehicle. The process is designed to identify the actual cause, explain what was found, and recommend only what makes sense next.</p>
+          <div><p class="eyebrow">04 — Precision diagnostics</p><h2>Correct diagnosis.<br><span>Clear next step.</span></h2></div>
+          <p>The process starts by understanding the vehicle—not by guessing which part to replace. Findings are organized so the customer can make an informed decision.</p>
           <div class="section-note">INSPECT.<br>VERIFY.<br>RECOMMEND.</div>
         </div>
 
         <div class="process-grid">
-          <article class="process-card">
-            <div class="card-image"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1000&q=82" alt="Technician inspecting a vehicle" loading="lazy"></div>
-            <div class="process-copy"><div class="card-title"><b>01</b><h3>Inspect</h3></div><p>Start with a structured visual and functional inspection of the vehicle.</p></div>
-          </article>
-          <article class="process-card">
-            <div class="card-image"><img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=1000&q=82" alt="Automotive diagnostic workflow" loading="lazy"></div>
-            <div class="process-copy"><div class="card-title"><b>02</b><h3>Diagnose</h3></div><p>Use data, testing, and diagnostic equipment to locate the root cause.</p></div>
-          </article>
-          <article class="process-card">
-            <div class="card-image diagnostic-ui"><div class="scan-ui"><span></span><span></span><span></span><i></i><i></i><i></i><strong>VEHICLE HEALTH<br>DIAGNOSTIC REPORT</strong></div></div>
-            <div class="process-copy"><div class="card-title"><b>03</b><h3>Explain</h3></div><p>Translate the findings into something the customer can actually understand.</p></div>
-          </article>
-          <article class="process-card">
-            <div class="card-image"><img src="https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=1000&q=82" alt="Customer consultation" loading="lazy"></div>
-            <div class="process-copy"><div class="card-title"><b>04</b><h3>Recommend</h3></div><p>Prioritize the right solution, then move forward with an informed decision.</p></div>
-          </article>
+          <article class="process-card"><div class="process-symbol">01</div><div class="process-copy"><div class="card-title"><h3>Inspect</h3></div><p>Start with the complaint, visible condition, and relevant vehicle systems.</p></div></article>
+          <article class="process-card"><div class="process-symbol">02</div><div class="process-copy"><div class="card-title"><h3>Diagnose</h3></div><p>Use scan data, testing, and measurement to narrow down the actual cause.</p></div></article>
+          <article class="process-card"><div class="process-symbol">03</div><div class="process-copy"><div class="card-title"><h3>Explain</h3></div><p>Translate the findings into clear language: what was found, why it matters, and what can wait.</p></div></article>
+          <article class="process-card"><div class="process-symbol">04</div><div class="process-copy"><div class="card-title"><h3>Recommend</h3></div><p>Present the next practical step so the customer can decide before work proceeds.</p></div></article>
         </div>
       </section>
 
-      <section class="work section-frame wrap" id="work">
+      <section class="proof section-frame wrap" id="reviews">
         <div class="section-head compact">
-          <div>
-            <p class="eyebrow">05 — Real work</p>
-            <h2>Problems found.<br><span>Solutions proven.</span></h2>
-          </div>
-          <p>Before and after should show the repair itself—not just the vehicle. We document the condition we found, the work performed, and the result we verified before release.</p>
-          <div class="section-note">DIAGNOSE.<br>REPAIR.<br>VERIFY.</div>
+          <div><p class="eyebrow">05 — Public proof</p><h2>Read the full picture.<br><span>Not cherry-picked quotes.</span></h2></div>
+          <p>Rather than invent or selectively copy testimonials, this demo links directly to Mastermind Autoworks’ public Google Maps review history.</p>
+          <div class="section-note">PUBLIC.<br>VERIFIABLE.<br>CURRENT.</div>
         </div>
 
-        <div class="case-grid before-after-grid">
-          <article class="case-card before-after-card repair-proof-card">
-            <div class="compare-media">
-              <figure class="compare-frame before">
-                <img src="https://attachments.priuschat.com/attachment-files/2021/07/209462_B61B4B45-B394-4DAC-B228-2208C2D51986.jpeg" alt="Worn and corroded brake rotor before repair" loading="lazy">
-                <figcaption>Before repair</figcaption>
-              </figure>
-              <figure class="compare-frame after">
-                <img src="https://static.overfuel.com/dealers/european-motorcars/image/brakes.webp" alt="New brake rotor being installed after repair" loading="lazy">
-                <figcaption>After repair</figcaption>
-              </figure>
-            </div>
-            <div class="case-copy repair-copy">
-              <span class="micro">BRAKE SYSTEM / SAFETY</span>
-              <h3>Brake System Service</h3>
-              <h4>Wear identified. Braking hardware restored.</h4>
-              <div class="repair-meta">
-                <div><span>Problem</span><p>Rotor wear, corrosion, and compromised friction surface discovered during inspection.</p></div>
-                <div><span>Work performed</span><p>Brake components inspected, affected parts replaced, and assembly completed to specification.</p></div>
-                <div class="verified"><span>Verified result</span><p>Clean contact surface, correct installation, and braking operation checked before release.</p></div>
-              </div>
-            </div>
+        <div class="proof-grid">
+          <article class="rating-card" aria-label="Google Maps rating: 4.1 out of 5 from 31 reviews">
+            <p class="micro">GOOGLE MAPS</p>
+            <div class="rating-line"><strong>4.1</strong><span>/ 5</span></div>
+            <div class="stars" aria-hidden="true">★★★★<span>★</span></div>
+            <p>Based on <strong>31 public reviews</strong> in the Google Maps listing. Rating snapshot: September 20, 2026.</p>
+            <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&query=Mastermind%20Autoworks&query_place_id=ChIJQ88W1lfJlzMRC0NJgx6OOV0" target="_blank" rel="noopener noreferrer">Read all Google reviews <span aria-hidden="true">↗</span></a>
           </article>
 
-          <article class="case-card before-after-card repair-proof-card">
-            <div class="compare-media">
-              <figure class="compare-frame before">
-                <img src="https://i.sstatic.net/okWOz.jpg" alt="Worn front strut and damaged dust boot before suspension repair" loading="lazy">
-                <figcaption>Before repair</figcaption>
-              </figure>
-              <figure class="compare-frame after">
-                <img src="https://www.portalridice.cz/data/blog-article/illustration/orig/img-9078.jpg" alt="Replacement shock absorber and spring installed after suspension repair" loading="lazy">
-                <figcaption>After repair</figcaption>
-              </figure>
-            </div>
-            <div class="case-copy repair-copy">
-              <span class="micro">SUSPENSION / RIDE QUALITY</span>
-              <h3>Suspension Repair</h3>
-              <h4>Worn component out. Correct fitment in.</h4>
-              <div class="repair-meta">
-                <div><span>Problem</span><p>Worn strut assembly and deteriorated protective components affecting ride quality and control.</p></div>
-                <div><span>Work performed</span><p>Suspension condition confirmed, replacement assembly installed, and related mounting points checked.</p></div>
-                <div class="verified"><span>Verified result</span><p>Replacement secured correctly and suspension operation checked before the vehicle returns to the road.</p></div>
-              </div>
-            </div>
+          <article class="team-card">
+            <div class="team-image"><img src="assets/mastermind-social-team.png" alt="People seated in front of the Mastermind Autoworks wall sign" loading="lazy"></div>
+            <div class="team-copy"><p class="micro">REAL MASTERMIND ASSET</p><h3>Use the shop, the people, and the work.</h3><p>This redesign removes third-party “before / after” images from the proof section. Add Mastermind’s own documented repair photos here when available.</p></div>
           </article>
         </div>
-        <p class="asset-note">Mockup imagery only. Replace these with Mastermind Autoworks’ own documented repair photos before launch so every before-and-after result is authentic to the shop.</p>
+
+        <div class="work-standard">
+          <div><span>01</span><strong>Before</strong><small>Photograph the actual condition found.</small></div>
+          <div><span>02</span><strong>During</strong><small>Document the component, measurement, or repair.</small></div>
+          <div><span>03</span><strong>After</strong><small>Show the completed work or verified result.</small></div>
+          <div><span>04</span><strong>Context</strong><small>State the vehicle, concern, work performed, and result.</small></div>
+        </div>
       </section>
 
       <section class="assurance section-frame wrap" id="assurance">
         <div class="assurance-visual">
-          <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=1600&q=84" alt="Technician working carefully on a vehicle" loading="lazy" />
-          <div class="assurance-stamp"><span>MASTER MIND</span><small>CONFIDENCE BEFORE THE REPAIR</small></div>
+          <div class="assurance-panel">
+            <span class="micro">SERVICE DECISION / 006</span>
+            <strong>Evidence before recommendation.</strong>
+            <div class="assurance-meter" aria-hidden="true"><i></i><i></i><i></i></div>
+            <small>Inspect → diagnose → explain → authorize → verify</small>
+          </div>
         </div>
         <div class="assurance-copy">
           <p class="eyebrow">06 — Confidence before the repair</p>
           <h2>Correct diagnosis.<br>Clear recommendation.<br><span>Confident repair.</span></h2>
-          <p class="assurance-lead">The goal is not simply to tell you what can be replaced. It is to make sure the recommendation is supported by what the vehicle actually needs.</p>
+          <p class="assurance-lead">The goal is not simply to list what can be replaced. It is to make sure the recommendation is supported by what the vehicle actually needs.</p>
           <div class="assurance-list">
             <div><b>01</b><span><strong>Diagnose first.</strong><small>Identify the cause before recommending the fix.</small></span></div>
             <div><b>02</b><span><strong>Explain clearly.</strong><small>Understand what was found and why it matters.</small></span></div>
-            <div><b>03</b><span><strong>Proceed with confidence.</strong><small>Move forward knowing the work has a reason behind it.</small></span></div>
+            <div><b>03</b><span><strong>Authorize deliberately.</strong><small>Proceed only after the recommended work is understood.</small></span></div>
           </div>
         </div>
       </section>
 
       <section class="contact section-frame wrap" id="contact">
-        <div>
-          <p class="eyebrow">07 — Let’s connect</p>
-          <h2>Give your car the<br><span>Mastermind standard.</span></h2>
-          <p>Book a visit or talk to the team about your vehicle.</p>
+        <div class="contact-heading">
+          <p class="eyebrow">07 — Practical details</p>
+          <h2>Ready to discuss<br><span>your vehicle?</span></h2>
+          <p>Choose the quickest way to reach the team or send a structured visit request.</p>
         </div>
-        <div class="contact-item"><span>●</span><div><b>Mandaluyong, Metro Manila</b><small>858 Balagtas St., Addition Hills</small></div></div>
-        <div class="contact-item"><span>⌕</span><div><b>+63 917 629 0000</b><small>For inquiries and reservations</small></div></div>
-        <a class="button button-orange" href="tel:+639176290000">Book a Visit <span>→</span></a>
+        <div class="contact-actions">
+          <a class="contact-action" href="tel:+639176290000"><span>CALL</span><strong>+63 917 629 0000</strong><small>Tap to call the shop</small></a>
+          <a class="contact-action" href="sms:+639176290000"><span>TEXT</span><strong>Send an SMS</strong><small>Open your messaging app</small></a>
+          <a class="contact-action" href="https://www.google.com/maps/search/?api=1&query=Mastermind%20Autoworks&query_place_id=ChIJQ88W1lfJlzMRC0NJgx6OOV0" target="_blank" rel="noopener noreferrer"><span>VISIT</span><strong>858 Balagtas St.</strong><small>Addition Hills, Mandaluyong</small></a>
+        </div>
+        <a class="button button-primary contact-book" href="book/">Request a Visit <span aria-hidden="true">→</span></a>
       </section>
     </main>
 
     <footer class="footer wrap">
-      <a href="#home" class="footer-logo" aria-label="Mastermind Autoworks home"><img src="assets/mastermind-logo.png" alt="Mastermind Autoworks" /></a>
+      <a href="#home" class="footer-logo" aria-label="Mastermind Autoworks home"><img src="assets/mastermind-logo-light.png" alt="Mastermind Autoworks" /></a>
       <p>BETTER CARS. BRIGHTER DRIVERS.</p>
-      <div class="footer-links"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
-      <small>© 2026 Mastermind Autoworks. All rights reserved.</small>
+      <div class="footer-links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Mastermind%20Autoworks&query_place_id=ChIJQ88W1lfJlzMRC0NJgx6OOV0" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+        <a href="tel:+639176290000">Call</a>
+        <a href="sms:+639176290000">Text</a>
+        <a href="book/">Request Visit</a>
+      </div>
+      <small>© 2026 Mastermind Autoworks. Demo build. Replace demo canonical URLs with the production domain before launch.</small>
     </footer>
   </div>
 

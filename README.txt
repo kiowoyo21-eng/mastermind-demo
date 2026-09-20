@@ -1,22 +1,39 @@
-MASTERMIND AUTOWORKS — CODED HOMEPAGE MOCKUP V4
+MASTERMIND AUTOWORKS — WHITE PREMIUM DEMO REFRESH
 
-Files
-- index.html
-- styles.css
-- script.js
-- assets/mastermind-logo.png
-- assets/favicon.png
+Main changes
+- Converted the visual system from black/dark to a premium white/light theme.
+- Removed third-party before/after images that could be mistaken for Mastermind work.
+- Added a Google Maps proof section using the current public listing aggregate: 4.1/5 from 31 reviews, with a direct Google Maps link. No review quotes were invented or copied without verification.
+- Uses the Mastermind-owned team image already included in the uploaded project.
+- Replaced remote stock imagery in the primary experience with local assets and CSS technical visuals.
+- Added six dedicated service landing pages.
+- Added a truthful Request a Visit flow that creates a pre-filled SMS. It does not pretend to auto-confirm or store an appointment.
+- Added tap-to-call, tap-to-text, and Google Maps directions/reviews links.
+- Removed fake # social links because verified official social URLs were not available in the project.
+- Added AutoRepair structured data without self-serving review markup.
+- Added robots.txt, sitemap.xml, Open Graph metadata, improved titles/descriptions, keyboard focus states, a skip link, and better semantic links.
+- Added Vercel security headers and clean URLs.
+- Created assets/mastermind-logo-light.png for the white theme and assets/og-mastermind.jpg for social sharing.
 
-What changed in V4
-- Uses the provided Mastermind Autoworks logo and MND favicon.
-- Reworked the "Mastermind Standard" section to emphasize service, excellence, and premium care.
-- Services are larger and more prominent, with a featured diagnostics card.
-- "Real Work" is now a true Before / After layout.
-- Removed the Articles / Insights section.
-- Added an assurance section: Correct diagnosis → Clear recommendation → Confident repair.
-- Increased spacing and reduced dashboard-style density for a more premium feel.
+Important before production
+1. Replace https://mastermind-demo.vercel.app in canonical, Open Graph, sitemap, and JSON-LD with the final production domain.
+2. Add verified official Facebook / Instagram / TikTok URLs if desired. Do not use placeholder # links.
+3. Add Mastermind's own repair photos before introducing real case studies or before/after claims.
+4. Confirm current service scope and accreditation before publishing air-conditioning service claims. The latest DTI material found during the audit was from 2025 and described the category as excluding aircon servicing; a current 2026 record was not found in search.
+5. Reconfirm public phone, address, business hours, and any pricing/warranty statements before launch.
+6. The visit form opens SMS only. Connect it to a real CRM/booking backend if online appointment submission is required.
 
-Notes
-- Sample automotive photography currently uses remote Unsplash URLs.
-- Before/After images are placeholders and should be replaced with Mastermind's real documented work for production.
-- Reconfirm contact details and social links before launch.
+Current public facts used in demo
+- Google Maps listing: 4.1/5, 31 reviews at audit time.
+- Address: 858 Balagtas St., Addition Hills, Mandaluyong City.
+- Phone: +63 917 629 0000.
+
+Routes
+- /
+- /book/
+- /services/diagnostics/
+- /services/preventive-maintenance/
+- /services/engine-drivetrain/
+- /services/suspension-steering/
+- /services/electrical-electronics/
+- /services/air-conditioning/
