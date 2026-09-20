@@ -39,3 +39,17 @@ Routes
 - /services/air-conditioning/
 
 CTA update: Service cards use CONSULT NOW for Messenger and scheduling CTAs use SCHEDULE NOW. Messenger target is https://m.me/mastermindautoworks; verify the official Facebook Page username before production if it differs.
+
+
+Standalone pages:
+- /about/ — Our Standard
+- /work/ — Work & diagnostic process
+- /reviews/ — Positive Google review portal
+- /contact/ — Contact methods and directions
+
+
+V9 MEDIA UPDATE
+- Uses actual Mastermind workshop/service photos supplied in Archive(1).zip.
+- Uses 10 supplied positive client testimonial graphics on /reviews/ and 3 as homepage review previews.
+- Images are optimized to WebP under assets/photos and assets/reviews.
+- No third-party repair images are used in the updated photo sections.
