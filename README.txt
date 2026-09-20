@@ -3,7 +3,7 @@ MASTERMIND AUTOWORKS — WHITE PREMIUM DEMO REFRESH
 Main changes
 - Converted the visual system from black/dark to a premium white/light theme.
 - Removed third-party before/after images that could be mistaken for Mastermind work.
-- Added a Google Maps proof section using the current public listing aggregate: 4.1/5 from 31 reviews, with a direct Google Maps link. No review quotes were invented or copied without verification.
+- Reworked the customer review section to avoid showing the aggregate Google rating/review count. It is designed to display only exact, verified positive Google review excerpts; no customer quotes are fabricated.
 - Uses the Mastermind-owned team image already included in the uploaded project.
 - Replaced remote stock imagery in the primary experience with local assets and CSS technical visuals.
 - Added six dedicated service landing pages.
@@ -24,7 +24,7 @@ Important before production
 6. The visit form opens SMS only. Connect it to a real CRM/booking backend if online appointment submission is required.
 
 Current public facts used in demo
-- Google Maps listing: 4.1/5, 31 reviews at audit time.
+- Google Maps listing is linked for verification, but the website intentionally does not display its aggregate rating or review count.
 - Address: 858 Balagtas St., Addition Hills, Mandaluyong City.
 - Phone: +63 917 629 0000.
 
