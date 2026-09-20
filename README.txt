@@ -3,7 +3,7 @@ MASTERMIND AUTOWORKS — WHITE PREMIUM DEMO REFRESH
 Main changes
 - Converted the visual system from black/dark to a premium white/light theme.
 - Removed third-party before/after images that could be mistaken for Mastermind work.
-- Reworked the customer review section to avoid showing the aggregate Google rating/review count. It is designed to display only exact, verified positive Google review excerpts; no customer quotes are fabricated.
+- Reworked the customer review section for positive Google Maps feedback only. No aggregate rating or review count is displayed, and no customer quote is fabricated when exact review text is unavailable.
 - Uses the Mastermind-owned team image already included in the uploaded project.
 - Replaced remote stock imagery in the primary experience with local assets and CSS technical visuals.
 - Added six dedicated service landing pages.
