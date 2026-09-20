@@ -26,7 +26,7 @@ let requestText = '';
 function buildRequest(form) {
   const data = new FormData(form);
   return [
-    'Hi Mastermind Autoworks, I would like to request a service visit.',
+    'Hi Mastermind Autoworks, I would like to schedule a service visit.',
     '',
     `Name: ${data.get('name') || ''}`,
     `Mobile: ${data.get('mobile') || ''}`,
@@ -36,7 +36,7 @@ function buildRequest(form) {
     `Preferred date: ${data.get('date') || ''}`,
     `Preferred time: ${data.get('time') || 'Any available time'}`,
     '',
-    'Please let me know the next available schedule. I understand this request is not confirmed until the team replies.'
+    'Please confirm whether my preferred schedule is available. I understand the appointment is confirmed only when the team replies.'
   ].join('\n');
 }
 

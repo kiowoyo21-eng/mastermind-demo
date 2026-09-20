@@ -7,7 +7,7 @@ Main changes
 - Uses the Mastermind-owned team image already included in the uploaded project.
 - Replaced remote stock imagery in the primary experience with local assets and CSS technical visuals.
 - Added six dedicated service landing pages.
-- Added a truthful Request a Visit flow that creates a pre-filled SMS. It does not pretend to auto-confirm or store an appointment.
+- Added a truthful Schedule Now / Schedule a Visit flow that creates a pre-filled SMS. It does not pretend to auto-confirm or store an appointment.
 - Added tap-to-call, tap-to-text, and Google Maps directions/reviews links.
 - Removed fake # social links because verified official social URLs were not available in the project.
 - Added AutoRepair structured data without self-serving review markup.
@@ -37,3 +37,5 @@ Routes
 - /services/suspension-steering/
 - /services/electrical-electronics/
 - /services/air-conditioning/
+
+CTA update: Service cards use CONSULT NOW for Messenger and scheduling CTAs use SCHEDULE NOW. Messenger target is https://m.me/mastermindautoworks; verify the official Facebook Page username before production if it differs.
