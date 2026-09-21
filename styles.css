@@ -224,3 +224,11 @@ a.practical-card:hover{transform:translateY(-3px);border-color:var(--line-strong
 
 /* Accessibility utility */
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+
+/* Floating Messenger CTA */
+.floating-message{position:fixed;right:24px;bottom:24px;z-index:480;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 20px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:var(--orange);color:#fff;box-shadow:0 16px 38px rgba(239,108,36,.32),0 6px 18px rgba(23,25,24,.12);font:600 10px/1 var(--font-mono);letter-spacing:.1em;text-transform:uppercase;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.floating-message svg{width:22px;height:22px;flex:0 0 22px;fill:currentColor}
+.floating-message:hover{transform:translateY(-3px);background:var(--orange-dark);box-shadow:0 20px 44px rgba(239,108,36,.36),0 8px 22px rgba(23,25,24,.14)}
+.floating-message:active{transform:translateY(-1px)}
+@media (max-width:620px){.floating-message{right:14px;bottom:14px;width:54px;height:54px;min-height:54px;padding:0;border-radius:50%}.floating-message span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.floating-message svg{width:23px;height:23px}}
