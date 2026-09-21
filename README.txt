@@ -57,3 +57,13 @@ QA changes in this build
 - Separated supplied testimonial artwork from Google Maps review claims.
 - Added accessible testimonial transcripts.
 - Temporarily removed unverified air-conditioning service promotion from public discovery paths.
+
+SECURITY HARDENING (V17)
+------------------------
+- Vercel sends a restrictive Content-Security-Policy. Local scripts/images are allowed; Google Fonts is the only remote asset origin allowed.
+- Inline JSON-LD structured data is allowed only by exact SHA-256 hashes; unsafe-inline and unsafe-eval are not enabled.
+- Clickjacking is blocked with frame-ancestors 'none' and X-Frame-Options: DENY.
+- MIME sniffing is disabled, referrer data is restricted, unnecessary browser capabilities are disabled, and HTTPS is reinforced with HSTS.
+- Booking form data is not sent to this site. It is converted locally into an SMS draft. Fields now have reasonable length limits and control-character cleanup before the SMS URI is created.
+- External links opened in a new tab use noopener+noreferrer.
+- This is a static front-end security baseline. If a server-side booking/API layer is added later, validate input again on the server, add rate limiting, CSRF/origin protections where applicable, logging, secret management, and abuse controls.

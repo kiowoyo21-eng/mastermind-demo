@@ -23,18 +23,27 @@ const preview = document.querySelector('#request-preview');
 const copyButton = document.querySelector('#copy-request');
 let requestText = '';
 
+function cleanField(value, maxLength) {
+  return String(value ?? '')
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, '')
+    .trim()
+    .slice(0, maxLength);
+}
+
 function buildRequest(form) {
   const data = new FormData(form);
+  const service = cleanField(data.get('service'), 80) || 'Not sure yet';
+  const time = cleanField(data.get('time'), 80) || 'Any available time';
   return [
     'Hi Mastermind Autoworks, I would like to schedule a service visit.',
     '',
-    `Name: ${data.get('name') || ''}`,
-    `Mobile: ${data.get('mobile') || ''}`,
-    `Service: ${data.get('service') || 'Not sure yet'}`,
-    `Vehicle: ${data.get('vehicle') || ''}`,
-    `Concern: ${data.get('concern') || ''}`,
-    `Preferred date: ${data.get('date') || ''}`,
-    `Preferred time: ${data.get('time') || 'Any available time'}`,
+    `Name: ${cleanField(data.get('name'), 80)}`,
+    `Mobile: ${cleanField(data.get('mobile'), 30)}`,
+    `Service: ${service}`,
+    `Vehicle: ${cleanField(data.get('vehicle'), 120)}`,
+    `Concern: ${cleanField(data.get('concern'), 1200)}`,
+    `Preferred date: ${cleanField(data.get('date'), 20)}`,
+    `Preferred time: ${time}`,
     '',
     'Please confirm whether my preferred schedule is available. I understand the appointment is confirmed only when the team replies.'
   ].join('\n');

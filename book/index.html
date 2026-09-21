@@ -56,11 +56,11 @@
   <form class="booking-form" id="visit-request-form">
     <p class="micro">SCHEDULE DETAILS</p>
     <div class="form-grid">
-      <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
-      <div class="field"><label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" autocomplete="tel" required></div>
+      <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" maxlength="80" required></div>
+      <div class="field"><label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" required></div>
       <div class="field full"><label for="service">Service / starting point</label><select id="service" name="service"><option value="">Not sure yet</option><option value="diagnostics">Vehicle Diagnostics</option><option value="preventive-maintenance">Preventive Maintenance</option><option value="engine-drivetrain">Engine &amp; Drivetrain</option><option value="suspension-steering">Suspension &amp; Steering</option><option value="electrical-electronics">Electrical &amp; Electronics</option></select></div>
-          <div class="field full"><label for="vehicle">Vehicle (year / make / model)</label><input id="vehicle" name="vehicle" placeholder="e.g. 2020 Toyota Fortuner" required></div>
-      <div class="field full"><label for="concern">Concern / symptoms</label><textarea id="concern" name="concern" placeholder="Describe what the vehicle is doing, warning lights, noises, when it happens, and any recent work." required></textarea></div>
+          <div class="field full"><label for="vehicle">Vehicle (year / make / model)</label><input id="vehicle" name="vehicle" maxlength="120" placeholder="e.g. 2020 Toyota Fortuner" required></div>
+      <div class="field full"><label for="concern">Concern / symptoms</label><textarea id="concern" name="concern" maxlength="1200" placeholder="Describe what the vehicle is doing, warning lights, noises, when it happens, and any recent work." required></textarea></div>
       <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date" required></div>
       <div class="field"><label for="time">Preferred time</label><select id="time" name="time"><option value="">Any available time</option><option>Morning</option><option>Afternoon</option></select></div>
     </div>
