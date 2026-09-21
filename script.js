@@ -76,3 +76,20 @@ if (serviceField) {
     serviceField.value = requestedService;
   }
 }
+
+
+const preferredDateField = document.querySelector('#date');
+if (preferredDateField) {
+  const today = new Date();
+  const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+    .toISOString()
+    .slice(0, 10);
+  preferredDateField.min = localToday;
+  preferredDateField.addEventListener('change', () => {
+    if (preferredDateField.value && preferredDateField.value < localToday) {
+      preferredDateField.setCustomValidity('Please choose today or a future date.');
+    } else {
+      preferredDateField.setCustomValidity('');
+    }
+  });
+}

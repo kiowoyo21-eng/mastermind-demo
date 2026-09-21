@@ -1,55 +1,59 @@
-MASTERMIND AUTOWORKS — WHITE PREMIUM DEMO REFRESH
+MASTERMIND AUTOWORKS — WHITE PREMIUM WEBSITE BUILD
 
-Main changes
-- Converted the visual system from black/dark to a premium white/light theme.
-- Removed third-party before/after images that could be mistaken for Mastermind work.
-- Reworked the customer review section for positive Google Maps feedback only. No aggregate rating or review count is displayed, and no customer quote is fabricated when exact review text is unavailable.
-- Uses the Mastermind-owned team image already included in the uploaded project.
-- Replaced remote stock imagery in the primary experience with local assets and CSS technical visuals.
-- Added six dedicated service landing pages.
-- Added a truthful Schedule Now / Schedule a Visit flow that creates a pre-filled SMS. It does not pretend to auto-confirm or store an appointment.
-- Added tap-to-call, tap-to-text, and Google Maps directions/reviews links.
-- Removed fake # social links because verified official social URLs were not available in the project.
-- Added AutoRepair structured data without self-serving review markup.
-- Added robots.txt, sitemap.xml, Open Graph metadata, improved titles/descriptions, keyboard focus states, a skip link, and better semantic links.
-- Added Vercel security headers and clean URLs.
-- Created assets/mastermind-logo-light.png for the white theme and assets/og-mastermind.jpg for social sharing.
+Current build status
+- Premium white / black / orange visual system aligned with the supplied Mastermind branding and workshop imagery.
+- Uses only local Mastermind workshop/service photos in the primary experience; no third-party repair imagery is presented as Mastermind work.
+- Includes dedicated pages for Our Standard, Work & Process, Reviews, Contact, Schedule, and five publicly listed service categories.
+- Service cards use side-by-side VIEW DETAILS and CONSULT NOW actions on larger screens and stack on very small screens.
+- The hero uses a subtle technical grid over the workshop image, with a reduced Mastermind Standard overlay.
+- Client testimonial artwork is shown as supplied. The site does not claim those graphics are Google reviews; Google Maps is linked separately for independent public review context.
+- Testimonial images include hidden text transcripts for screen-reader accessibility.
+- Booking creates a pre-filled SMS request and does not claim to auto-confirm or store an appointment.
+- Booking prevents selection of past dates in supported browsers.
+- Includes tap-to-call, Google Maps directions, email, Messenger, robots.txt, sitemap.xml, Open Graph metadata, canonical URLs, structured data, keyboard focus states, a skip link, and Vercel security headers.
 
-Important before production
-1. Replace https://mastermind-demo.vercel.app in canonical, Open Graph, sitemap, and JSON-LD with the final production domain.
-2. Add verified official Facebook / Instagram / TikTok URLs if desired. Do not use placeholder # links.
-3. Add Mastermind's own repair photos before introducing real case studies or before/after claims.
-4. Confirm current service scope and accreditation before publishing air-conditioning service claims. The latest DTI material found during the audit was from 2025 and described the category as excluding aircon servicing; a current 2026 record was not found in search.
-5. Reconfirm public phone, address, business hours, and any pricing/warranty statements before launch.
-6. The visit form opens SMS only. Connect it to a real CRM/booking backend if online appointment submission is required.
-
-Current public facts used in demo
-- Google Maps listing is linked for verification, but the website intentionally does not display its aggregate rating or review count.
+Public facts currently used
 - Address: 858 Balagtas St., Addition Hills, Mandaluyong City.
-- Phone: +63 917 629 0000.
+- Mobile: +63 917 629 0000.
+- Public email: manda@mastermindautoworks.com, listed in Metrobank's 2026 Mastermind Autoworks promotion.
+- Hours are phrased as “Open daily from 8:00 AM” and link to the live Google Maps listing for current closing time.
+- Facebook / Messenger handle used: mastermindautoworks. This handle also appears in the supplied Mastermind testimonial artwork; owner confirmation is still recommended before production launch.
+
+Air-conditioning scope
+- Air-conditioning is NOT listed in the public homepage service grid, booking selector, or sitemap in this QA build.
+- The retained /services/air-conditioning/ page is marked noindex and asks users to confirm current availability directly with Mastermind.
+- Reason: the latest DTI accreditation record found in the audit was dated December 31, 2025 and described Mastermind's category as engine and electrical repairs excluding aircon servicing. A current 2026 accreditation record was not verified during this build.
 
 Routes
 - /
+- /about/
+- /work/
+- /reviews/
+- /contact/
 - /book/
 - /services/diagnostics/
 - /services/preventive-maintenance/
 - /services/engine-drivetrain/
 - /services/suspension-steering/
 - /services/electrical-electronics/
-- /services/air-conditioning/
 
-CTA update: Service cards use CONSULT NOW for Messenger and scheduling CTAs use SCHEDULE NOW. Messenger target is https://m.me/mastermindautoworks; verify the official Facebook Page username before production if it differs.
+Retained non-indexed review route
+- /services/air-conditioning/ — confirm current service scope before relisting publicly.
 
+Before production-domain launch
+1. Replace https://mastermind-demo.vercel.app in canonical URLs, Open Graph URLs, sitemap.xml, robots.txt, and JSON-LD with the final production domain.
+2. Have Mastermind confirm the Facebook / Messenger username and any Instagram / TikTok destinations before adding more social links.
+3. Reconfirm current phone, address, email, business hours, payment methods, warranty terms, pricing statements, and service scope with the owner.
+4. Test the SMS booking action on at least one current iPhone and one current Android device; SMS URI handling can vary by platform/browser.
+5. If true online appointment submission is required, connect the form to the approved CRM / booking backend instead of relying on SMS.
 
-Standalone pages:
-- /about/ — Our Standard
-- /work/ — Work & diagnostic process
-- /reviews/ — Positive Google review portal
-- /contact/ — Contact methods and directions
-
-
-V9 MEDIA UPDATE
-- Uses actual Mastermind workshop/service photos supplied in Archive(1).zip.
-- Uses 10 supplied positive client testimonial graphics on /reviews/ and 3 as homepage review previews.
-- Images are optimized to WebP under assets/photos and assets/reviews.
-- No third-party repair images are used in the updated photo sections.
+QA changes in this build
+- Removed invalid closing link tags from HTML.
+- Removed visible development-only wording from customer-facing copy.
+- Corrected homepage section numbering.
+- Corrected the Schedule page nav state and marked the Schedule CTA as the current page.
+- Fixed the homepage footer logo link.
+- Added a today-or-later date constraint to the scheduling form.
+- Separated supplied testimonial artwork from Google Maps review claims.
+- Added accessible testimonial transcripts.
+- Temporarily removed unverified air-conditioning service promotion from public discovery paths.
