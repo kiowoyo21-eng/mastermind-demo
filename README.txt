@@ -67,3 +67,13 @@ SECURITY HARDENING (V17)
 - Booking form data is not sent to this site. It is converted locally into an SMS draft. Fields now have reasonable length limits and control-character cleanup before the SMS URI is created.
 - External links opened in a new tab use noopener+noreferrer.
 - This is a static front-end security baseline. If a server-side booking/API layer is added later, validate input again on the server, add rate limiting, CSRF/origin protections where applicable, logging, secret management, and abuse controls.
+
+CONTENT ADDITIONS (V18)
+-----------------------
+- Added a compact homepage trust strip using only facts/process commitments already supported by the build.
+- Added homepage diagnostic-path examples. These are explicitly labeled as method examples, not real customer case claims; replace them with verified case data when approved.
+- Added a symptom navigator that routes common concerns to the most relevant service page or Messenger.
+- Added an About Mastermind identity block using the supplied team image and existing verified location/contact/service-process facts.
+- Added a diagnostic-methods section to /work/ without claiming ownership of specific equipment that has not been verified.
+- Softened testimonial-page wording while preserving the distinction between supplied testimonial artwork and public Google Maps reviews.
+- No technician credentials, years-in-business claims, equipment ownership claims, warranties, prices, review scores/counts, or customer case outcomes were invented.
