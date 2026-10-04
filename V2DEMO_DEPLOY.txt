@@ -1,0 +1,11 @@
+MASTERmind V2 Demo deployment
+=============================
+
+This package preserves the current Mastermind website at the project root and adds the redesigned homepage/site under:
+https://mastermind-demo.vercel.app/v2demo/
+
+Deploy the CONTENTS of this package to the same Vercel project/repository currently serving mastermind-demo.vercel.app.
+Do not make v2demo a separate Vercel project.
+
+The /v2demo folder contains its own HTML, CSS, JavaScript and assets. Its internal relative links are set up to remain under /v2demo.
+The root vercel.json was updated only to allow the inline structured-data scripts used by both versions under the existing CSP.

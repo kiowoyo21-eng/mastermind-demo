@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Schedule a service visit with Mastermind Autoworks in Mandaluyong. Provide your vehicle, concern, and preferred schedule so the team can reply with the next available option." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://mastermind-demo.vercel.app/v2demo/book/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Schedule a Visit | Mastermind Autoworks Mandaluyong" />
+  <meta property="og:description" content="Schedule a service visit with Mastermind Autoworks in Mandaluyong." />
+  <meta property="og:url" content="https://mastermind-demo.vercel.app/v2demo/book/" />
+  <meta property="og:image" content="https://mastermind-demo.vercel.app/v2demo/assets/og-mastermind.jpg" />
+  <title>Schedule a Visit | Mastermind Autoworks Mandaluyong</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="site-shell">
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a href="../" class="brand brand-image" aria-label="Mastermind Autoworks home"><img src="../assets/mastermind-logo-light.png" alt="Mastermind Autoworks" /></a>
+<nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="../">Home</a>
+          <a class="nav-link" href="../about/">Our Standard</a>
+          <a class="nav-link" href="../#services">Services</a>
+          <a class="nav-link" href="../work/">Process</a>
+          <a class="nav-link" href="../reviews/">Reviews</a>
+          <a class="nav-link" href="../contact/">Contact</a>
+        </nav>
+      <a aria-current="page" class="button button-primary header-cta" href="../book/">Schedule Now <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+  <main id="main-content" class="subpage-main">
+
+<section class="subpage-hero wrap">
+  <div>
+    <p class="eyebrow">SCHEDULE A VISIT</p>
+    <h1>Tell us what<br><span>your car needs.</span></h1>
+    <p>Send the team your vehicle, concern, and preferred schedule. Your appointment is confirmed once the Mastermind team replies with an available slot.</p>
+    <div class="subpage-hero-actions"><a class="button button-primary" href="#visit-request-form">Schedule Now <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="tel:+639176290000">Call the Shop</a></div>
+  </div>
+  <aside class="subpage-badge">
+    <p class="micro">HOW IT WORKS</p>
+    <strong>Fill in → create SMS → team replies.</strong>
+    <small>Your visit is only confirmed after Mastermind Autoworks replies with an available schedule.</small>
+  </aside>
+</section>
+
+<section class="section-frame wrap booking-layout">
+  <form class="booking-form" id="visit-request-form">
+    <p class="micro">SCHEDULE DETAILS</p>
+    <div class="form-grid">
+      <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" maxlength="80" required></div>
+      <div class="field"><label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" required></div>
+      <div class="field full"><label for="service">Service / starting point</label><select id="service" name="service"><option value="">Not sure yet</option><option value="diagnostics">Vehicle Diagnostics</option><option value="preventive-maintenance">Preventive Maintenance</option><option value="engine-drivetrain">Engine &amp; Drivetrain</option><option value="suspension-steering">Suspension &amp; Steering</option><option value="electrical-electronics">Electrical &amp; Electronics</option></select></div>
+          <div class="field full"><label for="vehicle">Vehicle (year / make / model)</label><input id="vehicle" name="vehicle" maxlength="120" placeholder="e.g. 2020 Toyota Fortuner" required></div>
+      <div class="field full"><label for="concern">Concern / symptoms</label><textarea id="concern" name="concern" maxlength="1200" placeholder="Describe what the vehicle is doing, warning lights, noises, when it happens, and any recent work." required></textarea></div>
+      <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date" required></div>
+      <div class="field"><label for="time">Preferred time</label><select id="time" name="time"><option value="">Any available time</option><option>Morning</option><option>Afternoon</option></select></div>
+    </div>
+    <p class="booking-note">Submitting opens your SMS app with the details above. Your preferred schedule is only confirmed once the Mastermind team replies. The website does not submit or store this form on a server.</p>
+    <div class="booking-actions">
+      <button class="button button-primary" type="submit">Send Schedule Request <span aria-hidden="true">→</span></button>
+      <button class="button button-secondary" type="button" id="copy-request">Copy request</button>
+    </div>
+    <div class="request-preview" id="request-preview" aria-live="polite"></div>
+  </form>
+
+  <aside class="booking-aside">
+    <p class="micro">MASTERMIND / MANDALUYONG</p>
+    <h2>Before you send</h2>
+    <div class="booking-facts">
+      <div><span>PHONE</span><strong><a href="tel:+639176290000">+63 917 629 0000</a></strong><small>Call if the concern is urgent or you prefer to speak directly with the team.</small></div>
+      <div><span>LOCATION</span><strong><a href="https://www.google.com/maps/search/?api=1&query=Mastermind%20Autoworks&query_place_id=ChIJQ88W1lfJlzMRC0NJgx6OOV0" target="_blank" rel="noopener noreferrer">858 Balagtas St., Addition Hills</a></strong><small>Mandaluyong City, Metro Manila</small></div>
+      <div><span>CONFIRMATION</span><strong>Wait for the team’s reply.</strong><small>A preferred date is a request, not a confirmed slot.</small></div>
+      <div><span>USEFUL CONTEXT</span><strong>Include recent repairs and warning lights.</strong><small>Photos, previous diagnostic reports, and service records can also help when you arrive.</small></div>
+      <div><span>HOURS</span><strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Mastermind%20Autoworks&amp;query_place_id=ChIJQ88W1lfJlzMRC0NJgx6OOV0" target="_blank" rel="noopener noreferrer">Open daily from 8:00 AM</a></strong><small>Check the live Maps listing for today’s closing time before travelling.</small></div>
+      <div><span>EMAIL</span><strong><a href="mailto:manda@mastermindautoworks.com">manda@mastermindautoworks.com</a></strong><small>Use email if you need to send documents or longer written details.</small></div>
+    </div>
+  </aside>
+</section>
+
+<section class="section-frame wrap visit-prep">
+<div class="section-head compact"><div><p class="eyebrow">BEFORE YOUR APPOINTMENT</p><h2>Arrive with the right<br/><span>context, not a diagnosis.</span></h2></div><p>You do not need to know what is wrong. The most useful starting point is a clear description of what changed, when it happens, and any recent work done to the vehicle.</p></div>
+<div class="practical-grid">
+<div class="practical-card"><span>01</span><strong>Vehicle details</strong><small>Year, make, model, mileage, and plate number if available.</small></div>
+<div class="practical-card"><span>02</span><strong>Symptoms</strong><small>Warning lights, noises, vibrations, smells, leaks, or changes in performance.</small></div>
+<div class="practical-card"><span>03</span><strong>Recent work</strong><small>Share recent repairs, parts replaced, diagnostic reports, or recurring concerns.</small></div>
+<div class="practical-card"><span>04</span><strong>Confirmation</strong><small>Wait for the Mastermind team to confirm the requested date before travelling.</small></div>
+</div>
+</section>
+  </main>
+  <footer class="footer wrap">
+      <a href="../" class="footer-logo" aria-label="Mastermind Autoworks home"><img src="../assets/mastermind-logo-light.png" alt="Mastermind Autoworks" /></a>
+      <p>BETTER CARS. BRIGHTER DRIVERS.</p>
+      <div class="footer-links">
+        <a href="../about/">Our Standard</a>
+        <a href="../work/">Our Work</a>
+        <a href="../reviews/">Reviews</a>
+        <a href="../contact/">Contact</a>
+        <a href="../book/">Schedule Now</a>
+        <a href="https://www.facebook.com/mastermindautoworks" rel="noopener noreferrer" target="_blank">Facebook</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Mastermind%20Autoworks&amp;query_place_id=ChIJQ88W1lfJlzMRC0NJgx6OOV0" rel="noopener noreferrer" target="_blank">Maps</a>
+      </div>
+      <small>© 2026 Mastermind Autoworks.</small>
+    </footer>
+</div>
+<script src="../script.js"></script>
+<a class="floating-message" href="https://m.me/mastermindautoworks" target="_blank" rel="noopener noreferrer" aria-label="Message Mastermind Autoworks on Messenger">
+<svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M12 3.25c-5.11 0-9.25 3.72-9.25 8.31 0 2.61 1.34 4.94 3.44 6.46v2.73l2.52-1.39c1.03.33 2.14.51 3.29.51 5.11 0 9.25-3.72 9.25-8.31S17.11 3.25 12 3.25Zm.92 11.17-2.35-2.5-4.58 2.5 5.03-5.34 2.41 2.49 4.52-2.49-5.03 5.34Z"/></svg>
+<span>Message Us</span>
+</a>
+</body>
+</html>

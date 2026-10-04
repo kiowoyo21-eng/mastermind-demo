@@ -41,7 +41,7 @@ Retained non-indexed review route
 - /services/air-conditioning/ — confirm current service scope before relisting publicly.
 
 Before production-domain launch
-1. This build is already configured for https://v2.mastermind-demo.vercel.app. If the production domain changes later, update canonical URLs, Open Graph URLs, sitemap.xml, robots.txt, and JSON-LD.
+1. Replace https://mastermind-demo.vercel.app in canonical URLs, Open Graph URLs, sitemap.xml, robots.txt, and JSON-LD with the final production domain.
 2. Have Mastermind confirm the Facebook / Messenger username and any Instagram / TikTok destinations before adding more social links.
 3. Reconfirm current phone, address, email, business hours, payment methods, warranty terms, pricing statements, and service scope with the owner.
 4. Test the SMS booking action on at least one current iPhone and one current Android device; SMS URI handling can vary by platform/browser.

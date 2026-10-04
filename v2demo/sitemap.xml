@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/book/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/services/diagnostics/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/services/preventive-maintenance/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/services/engine-drivetrain/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/services/suspension-steering/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/services/electrical-electronics/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/about/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/work/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/reviews/</loc></url>
+  <url><loc>https://mastermind-demo.vercel.app/v2demo/contact/</loc></url>
+</urlset>
