@@ -454,3 +454,116 @@ body{font-family:var(--font-display);font-weight:400}
   .booking-form,.booking-aside{padding:20px 16px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.v2-final{padding:52px 0}.v2-final h2{font-size:clamp(44px,14vw,64px)}
   .subpage-hero{padding:34px 20px;border-radius:14px}.subpage-hero h1{font-size:44px}.subpage-service-photo{height:205px}
 }
+
+/* =========================================================
+   V2 SERVICE ROW REFINEMENT — FIXED LANDSCAPE PROPORTIONS
+   The card controls the image size, never the source photo.
+   ========================================================= */
+@media (min-width: 901px){
+  .home-v2 .v2-service-stack{
+    gap:14px;
+    border-top:0;
+  }
+  .home-v2 .v2-service-row,
+  .home-v2 .v2-service-row.reverse{
+    grid-template-columns:44% 56%;
+    height:280px;
+    min-height:0;
+    border:1px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
+    background:#fff;
+  }
+  .home-v2 .v2-service-row.reverse{
+    grid-template-columns:56% 44%;
+  }
+  .home-v2 .v2-service-media{
+    height:280px;
+    min-height:0;
+    overflow:hidden;
+  }
+  .home-v2 .v2-service-media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+  .home-v2 .v2-service-copy{
+    height:280px;
+    min-height:0;
+    padding:26px 34px;
+    justify-content:center;
+    overflow:hidden;
+  }
+  .home-v2 .v2-service-copy h3{
+    margin:8px 0 10px;
+    font-size:clamp(24px,2vw,32px);
+    line-height:1.04;
+    max-width:510px;
+  }
+  .home-v2 .v2-service-copy>p:not(.v2-kicker){
+    font-size:11px;
+    line-height:1.55;
+    max-width:500px;
+  }
+  .home-v2 .v2-inline-actions{
+    margin-top:14px;
+    gap:18px;
+  }
+  .home-v2 .v2-inline-actions .text-link{
+    font-size:8px;
+    padding-bottom:5px;
+  }
+  .home-v2 .v2-service-media>span{
+    width:34px;
+    height:34px;
+    left:13px;
+    bottom:13px;
+    font-size:7px;
+  }
+}
+
+@media (max-width: 900px){
+  .home-v2 .v2-service-stack{gap:14px;border-top:0}
+  .home-v2 .v2-service-row,
+  .home-v2 .v2-service-row.reverse{
+    display:grid;
+    grid-template-columns:1fr;
+    height:auto;
+    min-height:0;
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .home-v2 .v2-service-row.reverse .v2-service-media,
+  .home-v2 .v2-service-row.reverse .v2-service-copy{order:initial}
+  .home-v2 .v2-service-media{
+    width:100%;
+    height:auto;
+    min-height:0;
+    aspect-ratio:16/9;
+  }
+  .home-v2 .v2-service-media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+  .home-v2 .v2-service-copy{
+    height:auto;
+    min-height:0;
+    padding:24px 24px 26px;
+  }
+  .home-v2 .v2-service-copy h3{
+    margin:8px 0 10px;
+    font-size:clamp(25px,5vw,32px);
+  }
+  .home-v2 .v2-inline-actions{margin-top:14px}
+}
+
+@media (max-width: 620px){
+  .home-v2 .v2-service-media{aspect-ratio:16/9}
+  .home-v2 .v2-service-copy{padding:20px 18px 22px}
+  .home-v2 .v2-service-copy h3{font-size:26px;line-height:1.05}
+  .home-v2 .v2-service-copy>p:not(.v2-kicker){font-size:10.5px;line-height:1.55}
+}
