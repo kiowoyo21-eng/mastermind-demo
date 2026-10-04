@@ -877,3 +877,122 @@ body{font-family:var(--font-display);font-weight:400}
     margin-top:20px;
   }
 }
+
+/* =========================================================
+   V2 BOOKING REFINEMENT — compact booking, not oversized panel
+   ========================================================= */
+.home-v2 .v2-booking{
+  max-width:1180px;
+}
+.home-v2 .v2-booking-heading{
+  grid-template-columns:minmax(0,1fr) minmax(300px,.68fr);
+  gap:34px;
+  margin-bottom:22px;
+}
+.home-v2 .v2-booking-heading h2{
+  font-size:clamp(34px,3.05vw,48px);
+}
+.home-v2 .v2-booking-steps{
+  margin-bottom:14px;
+}
+.home-v2 .v2-booking-steps article{
+  min-height:88px;
+  padding:14px 18px 14px 0;
+  grid-template-columns:30px 1fr;
+  gap:9px;
+}
+.home-v2 .v2-booking-steps article+article{
+  padding-left:18px;
+}
+.home-v2 .v2-booking-steps h3{
+  font-size:15px;
+  margin:5px 0 4px;
+}
+.home-v2 .v2-booking-steps small{
+  font-size:9px;
+  line-height:1.4;
+}
+.home-v2 .v2-booking-layout.compact-booking .booking-form{
+  width:min(100%,980px);
+  max-width:980px;
+  margin-inline:auto;
+  padding:22px 24px;
+  border-radius:14px;
+}
+.home-v2 .booking-form .form-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px 12px;
+}
+.home-v2 .booking-form .field.full:nth-child(3),
+.home-v2 .booking-form .field.full:nth-child(4){
+  grid-column:auto;
+}
+.home-v2 .booking-form .field{
+  gap:5px;
+}
+.home-v2 .booking-form .field input,
+.home-v2 .booking-form .field select,
+.home-v2 .booking-form .field textarea{
+  padding:9px 11px;
+  min-height:38px;
+  font-size:11px;
+}
+.home-v2 .booking-form .field textarea{
+  min-height:74px;
+}
+.home-v2 .booking-form .booking-note{
+  margin:10px 0;
+  font-size:8.8px;
+}
+.home-v2 .booking-form .button{
+  padding:13px 18px;
+  font-size:8px;
+}
+.home-v2 .v2-booking-more{
+  max-width:980px;
+  margin-inline:auto;
+}
+
+/* Full V2 booking page: narrower and cleaner without touching the original site. */
+.subpage-main .booking-layout{
+  grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);
+  gap:16px;
+  max-width:1180px;
+}
+.subpage-main .booking-layout .booking-form,
+.subpage-main .booking-layout .booking-aside{
+  padding:24px;
+}
+.subpage-main .booking-layout .form-grid{
+  gap:10px 12px;
+}
+.subpage-main .booking-layout .field input,
+.subpage-main .booking-layout .field select,
+.subpage-main .booking-layout .field textarea{
+  padding:10px 11px;
+  font-size:11px;
+}
+.subpage-main .booking-layout .field textarea{
+  min-height:82px;
+}
+.subpage-main .booking-layout .booking-facts>div{
+  padding:13px 0;
+}
+.subpage-main .booking-layout .booking-aside h2{
+  font-size:28px;
+  margin:10px 0 16px;
+}
+
+@media (max-width:900px){
+  .home-v2 .v2-booking{max-width:none}
+  .home-v2 .v2-booking-heading{grid-template-columns:1fr}
+  .home-v2 .v2-booking-layout.compact-booking .booking-form{max-width:none}
+  .subpage-main .booking-layout{grid-template-columns:1fr;max-width:none}
+}
+@media (max-width:620px){
+  .home-v2 .booking-form .form-grid{grid-template-columns:1fr}
+  .home-v2 .booking-form .field.full:nth-child(3),
+  .home-v2 .booking-form .field.full:nth-child(4){grid-column:auto}
+  .home-v2 .v2-booking-layout.compact-booking .booking-form{padding:18px 16px}
+  .home-v2 .v2-booking-steps article{min-height:0}
+}

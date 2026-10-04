@@ -35,7 +35,7 @@ function buildRequest(form) {
   const service = cleanField(data.get('service'), 80) || 'Not sure yet';
   const time = cleanField(data.get('time'), 80) || 'Any available time';
   return [
-    'Hi Mastermind Autoworks, I would like to schedule a service visit.',
+    'Hi Mastermind Autoworks, I would like to book a service visit.',
     '',
     `Name: ${cleanField(data.get('name'), 80)}`,
     `Mobile: ${cleanField(data.get('mobile'), 30)}`,
@@ -45,7 +45,7 @@ function buildRequest(form) {
     `Preferred date: ${cleanField(data.get('date'), 20)}`,
     `Preferred time: ${time}`,
     '',
-    'Please confirm whether my preferred schedule is available. I understand the appointment is confirmed only when the team replies.'
+    'Please confirm my booking for the preferred date and time above. I understand the booking is confirmed when the team replies with availability.'
   ].join('\n');
 }
 
@@ -71,7 +71,7 @@ copyButton?.addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(requestText);
     copyButton.textContent = 'Copied';
-    setTimeout(() => { copyButton.textContent = 'Copy request'; }, 1600);
+    setTimeout(() => { copyButton.textContent = 'Copy Booking Details'; }, 1600);
   } catch {
     copyButton.textContent = 'Select text below';
   }
